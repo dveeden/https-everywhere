@@ -23,6 +23,10 @@
 
 		<test url="http://blog.booking.com/" />
 
+	<exclusion pattern="^http://sg\.booking\.com" />
+
+		<test url="http://sg.booking.com/" />
+
 	<rule from="^http://([\w\-]+\.)?booking\.com/"
 		to="https://$1booking.com/" />
 
